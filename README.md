@@ -59,5 +59,4 @@ This dataset is free to use with attribution: Michele Joseph, Compression Aware 
 
 ## Contact
 
-For collaboration or questions:
-- michele.a.joseph@gmail.com
+For collaboration/questions: michele.a.joseph@gmail.com
