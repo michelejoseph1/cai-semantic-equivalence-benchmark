@@ -8,7 +8,7 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 DATASET_PATH = "dataset.csv"
 
 
-def call_model(prompt: str, model: str) -> str:
+def call_model(prompt, model):
     """Call the chat model with a single user prompt."""
     response = client.chat.completions.create(
         model=model,
@@ -21,7 +21,7 @@ def call_model(prompt: str, model: str) -> str:
     return response.choices[0].message.content.strip()
 
 
-def simple_strain_score(a: str, b: str) -> float:
+def simple_strain_score(a, b):
     """
     Toy strain score: 0 if answers are identical after lowercasing and stripping,
     1 otherwise. This is a baseline, not a full CAI judge.
@@ -31,7 +31,7 @@ def simple_strain_score(a: str, b: str) -> float:
     return 0.0 if a_norm == b_norm else 1.0
 
 
-def run_eval(model: str, max_pairs: int | None = None):
+def run_eval(model, max_pairs=None):
     pairs = []
     with open(DATASET_PATH, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
