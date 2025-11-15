@@ -1,23 +1,12 @@
 # CAI Semantic Equivalence Benchmark v0.1
 
-This benchmark measures model inconsistency under semantically equivalent perturbations. Each pair contains two prompts that have the same meaning but different surface form. A model that is internally coherent should produce stable outputs across each pair.
+This benchmark measures model inconsistency under semantically equivalent perturbations. Each pair contains two prompts that have the same meaning but different surface form. A model that is internally coherent should produce stable outputs across each pair. This dataset is part of Compression Aware Intelligence (CAI), which defines compression strain as the measurable signal of internal contradiction under semantic equivalence. High strain indicates instability in the model's internal representation.
 
-This dataset is part of Compression Aware Intelligence (CAI), which defines compression strain as the measurable signal of internal contradiction under semantic equivalence. High strain indicates instability in the model's internal representation.
+The dataset is provided in two formats:`dataset.csv` & `dataset.json`
 
-## Format
-
-The dataset is provided in two formats:
-
-- `dataset.csv`
-- `dataset.json`
-
-Each entry has:
-- `pair_id`
-- `prompt_A`
-- `prompt_B`
+Each entry has `pair_id`, `prompt_A`, `prompt_B`
 
 Example:
-
 pair_id,prompt_A,prompt_B
 1,"Who wrote Pride and Prejudice?","Which author is responsible for the novel Pride and Prejudice?"
 
@@ -30,10 +19,6 @@ For gpt-4o on all 300 pairs:
 **Average CAI Strain Score:** 0.05  
 
 Lower is better (0 = perfect semantic consistency, 1 = contradiction).
-
-This replaces the naive v1 baseline score of **0.99**, which demonstrates why
-semantic strain scoring is necessary for meaningful reliability evaluation.
-
 
 
 ## Recommended Evaluation Procedure
