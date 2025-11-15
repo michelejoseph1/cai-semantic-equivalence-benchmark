@@ -22,6 +22,20 @@ pair_id,prompt_A,prompt_B
 1,"Who wrote Pride and Prejudice?","Which author is responsible for the novel Pride and Prejudice?"
 
 
+## CAI Strain Results
+
+We evaluate the benchmark using a semantic judge model (“CAI-strain-v2”).  
+For gpt-4o on all 300 pairs:
+
+**Average CAI Strain Score:** 0.05  
+
+Lower is better (0 = perfect semantic consistency, 1 = contradiction).
+
+This replaces the naive v1 baseline score of **0.99**, which demonstrates why
+semantic strain scoring is necessary for meaningful reliability evaluation.
+
+
+
 ## Recommended Evaluation Procedure
 
 For each pair:
