@@ -1,62 +1,80 @@
-# CAI Semantic Equivalence Benchmark v0.1
+# CAI Semantic Equivalence Benchmark v0.1  
+*A focused probe for consistency under meaning-preserving paraphrase*
 
-This benchmark measures model inconsistency under semantically equivalent perturbations. Each pair contains two prompts that have the same meaning but different surface form. A model that is internally coherent should produce stable outputs across each pair. This dataset is part of Compression Aware Intelligence (CAI), which defines compression strain as the measurable signal of internal contradiction under semantic equivalence. High strain indicates instability in the model's internal representation.
+This benchmark measures how reliably a model preserves its internal beliefs when two prompts ask **the same question in different words**.  
+It is built as the first operational slice of **Compression-Aware Intelligence (CAI)**: the view that reliability failures emerge when a model’s compressed representation cannot satisfy all constraints in a semantic equivalence class.
 
-The dataset is provided in two formats:`dataset.csv` & `dataset.json`
+A coherent model should answer both prompts the same way.  
+When it does not, CAI interprets the disagreement as **compression strain**.
 
-Each entry has `pair_id`, `prompt_A`, `prompt_B`
+---
 
-Example:
-pair_id,prompt_A,prompt_B
+## 📁 Dataset
+
+The dataset consists of **300 semantically equivalent prompt pairs** across:
+
+- factual queries  
+- everyday reasoning  
+- math and logic  
+- counterfactuals  
+- ethics / social norms  
+- creative writing  
+- summarization / paraphrasing  
+- meta prompts about models  
+- CAI-specific stressors (ambiguity, abstraction shifts, underspecification)
+
+Each row contains:
+pair_id, prompt_A, prompt_B
+
+**Example:**
 1,"Who wrote Pride and Prejudice?","Which author is responsible for the novel Pride and Prejudice?"
 
+Formats:
 
-## CAI Strain Results
+- `dataset.csv` — canonical version  
+- `dataset.json` — JSON list of all pairs  
 
-We evaluate the benchmark using a semantic judge model (“CAI-strain-v2”).  
-For gpt-4o on all 300 pairs:
+---
 
-**Average CAI Strain Score:** 0.3642
+## 📊 CAI Strain Results (gpt-4o)
 
-Lower is better (0 = perfect semantic consistency, 1 = contradiction).
+We evaluate models using a simple semantic-judge scoring function (“**CAI-strain-v2**”) that compares:
 
+- factual agreement  
+- reasoning consistency  
+- directional claims  
+- tone/intent shifts  
+- contradictory or mutually exclusive statements  
 
-## Recommended Evaluation Procedure
+Scored 0 (stable) to 1 (contradictory).
 
-For each pair:
+For **gpt-4o** on all **300** pairs:
 
-1. Query the model with prompt A.
-2. Query the model with prompt B.
-3. Measure:
-   - output difference (edit distance or embedding distance)
-   - contradiction or factual disagreement
-   - refusal inconsistency
-   - reasoning drift
+**→ Average CAI Strain v2: 0.3642**  
+**→ String mismatch baseline: 0.9900**
 
-4. Average these measures to compute a compression strain score.
+Surface mismatch is almost universal (0.99), but meaningful drift appears in ~36% of semantically equivalent pairs.  
+This gap is the core motivation for the CAI view: **reliability is about representation-level coherence, not text-level similarity**.
 
-Lower scores indicate higher internal coherence.
+All outputs are available in:
 
-## Intended Use
+- `results_gpt-4o.csv`  
+- `scores.csv`  
 
-This benchmark helps evaluate:
+---
 
-- truthfulness under paraphrase
-- robustness to meaning preserving perturbations
-- hidden internal contradictions
-- stability across rephrasings
-- hallucination susceptibility under compression stress
+## ▶️ Reproducing the Results
 
-It is useful for:
-- reliability research
-- safety evaluations
-- interpretability studies
-- model comparison
+```bash
+git clone https://github.com/michelejoseph1/cai-semantic-equivalence-benchmark.git
+cd cai-semantic-equivalence-benchmark
 
-## License
+python -m venv .venv
+source .venv/bin/activate
 
-This dataset is free to use with attribution: Michele Joseph, Compression Aware Intelligence (2025).
+pip install -r requirements.txt
 
-## Contact
+export OPENAI_API_KEY="YOUR_KEY_HERE"
 
-For collaboration/questions: michele.a.joseph@gmail.com
+python evaluate_openai.py --model gpt-4o --max_pairs 300
+
