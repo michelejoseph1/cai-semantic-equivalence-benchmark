@@ -16,7 +16,7 @@ pair_id,prompt_A,prompt_B
 We evaluate the benchmark using a semantic judge model (“CAI-strain-v2”).  
 For gpt-4o on all 300 pairs:
 
-**Average CAI Strain Score:** 0.05  
+**Average CAI Strain Score:** 0.3642
 
 Lower is better (0 = perfect semantic consistency, 1 = contradiction).
 
