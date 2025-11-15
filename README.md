@@ -1,7 +1,7 @@
 # CAI Semantic Equivalence Benchmark v0.1  
 *A focused probe for consistency under meaning-preserving paraphrase*
 
-This benchmark measures how reliably a model preserves its internal beliefs when two prompts ask **the same question in different words**.  
+This benchmark measures how reliably a model preserves its internal beliefs when two prompts ask the same question in different words.  
 It is built as the first operational slice of **Compression-Aware Intelligence (CAI)**: the view that reliability failures emerge when a model’s compressed representation cannot satisfy all constraints in a semantic equivalence class.
 
 A coherent model should answer both prompts the same way.  
@@ -9,7 +9,7 @@ When it does not, CAI interprets the disagreement as **compression strain**.
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 The dataset consists of **300 semantically equivalent prompt pairs** across:
 
@@ -36,7 +36,7 @@ Formats:
 
 ---
 
-## 📊 CAI Strain Results (gpt-4o)
+##  CAI Strain Results (gpt-4o)
 
 We evaluate models using a simple semantic-judge scoring function (“**CAI-strain-v2**”) that compares:
 
@@ -56,14 +56,11 @@ For **gpt-4o** on all **300** pairs:
 Surface mismatch is almost universal (0.99), but meaningful drift appears in ~36% of semantically equivalent pairs.  
 This gap is the core motivation for the CAI view: **reliability is about representation-level coherence, not text-level similarity**.
 
-All outputs are available in:
-
-- `results_gpt-4o.csv`  
-- `scores.csv`  
+All outputs are available in:`results_gpt-4o.csv` & `scores.csv`  
 
 ---
 
-## ▶️ Reproducing the Results
+## Reproducing the Results
 
 ```bash
 git clone https://github.com/michelejoseph1/cai-semantic-equivalence-benchmark.git
