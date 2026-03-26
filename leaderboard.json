@@ -4,8 +4,18 @@
     "provider": "openai",
     "pairs": 300,
     "avg_cai_strain": 0.3642,
+    "by_difficulty": { "easy": null, "medium": null, "hard": null },
+    "by_domain": {
+      "factual": null, "everyday_reasoning": null, "math_logic": null,
+      "counterfactual": null, "ethics": null, "ai_safety": null,
+      "practical_planning": null, "causal_reasoning": null, "philosophy": null,
+      "social_emotional": null, "creative_writing": null, "summarization": null,
+      "cai_meta": null, "ecommerce": null, "hr": null, "healthcare": null,
+      "legal": null, "financial_services": null, "insurance": null
+    },
+    "false_positive_rate": null,
     "date": "2025-01-01",
     "scorer": "evaluate_openai.py",
-    "notes": "v0.1 dataset (300 pairs, no policy domain). Surface mismatch 0.99, semantic drift 0.36."
+    "notes": "v0.1 dataset (300 pairs). Re-run on v0.4 dataset to populate by_difficulty, by_domain, false_positive_rate."
   }
 ]
