@@ -35,6 +35,12 @@ Each row: `pair_id, domain, prompt_A, prompt_B`
 
 Formats: `dataset.csv`, `dataset.json`
 
+Also on Hugging Face:
+```python
+from datasets import load_dataset
+ds = load_dataset("compressionawareintelligence/cai-semantic-equivalence-benchmark")
+```
+
 ---
 
 ## Results
@@ -123,7 +129,7 @@ Results write to `results_{model}.csv` and append to `scores.csv`.
   author  = {Joseph, Michele},
   year    = {2025},
   url     = {https://github.com/michelejoseph1/cai-semantic-equivalence-benchmark},
-  note    = {v0.2}
+  note    = {v0.2, dataset: https://huggingface.co/datasets/compressionawareintelligence/cai-semantic-equivalence-benchmark}
 }
 ```
 
