@@ -31,14 +31,14 @@ dataset_info:
       dtype: string
   splits:
     - name: train
-      num_examples: 380
+      num_examples: 420
 ---
 
 # CAI Semantic Equivalence Benchmark
 
-**Version:** 0.2
-**Pairs:** 380
-**Domains:** 17
+**Version:** 0.3
+**Pairs:** 420
+**Domains:** 19
 **License:** MIT
 
 A benchmark for measuring semantic invariance in language models. Tests whether a model gives the same answer when the same question is rephrased.
@@ -103,8 +103,10 @@ print(ds["train"][0])
 | **hr** | **20** | **Policy-bound: PTO, benefits, conduct** |
 | **healthcare** | **20** | **Policy-bound: coverage, referrals, eligibility** |
 | **legal** | **20** | **Policy-bound: contracts, rights, obligations** |
+| **financial_services** | **20** | **Loans, accounts, tax, retirement (new in v0.3)** |
+| **insurance** | **20** | **Coverage, claims, exclusions, liability (new in v0.3)** |
 
-Policy domains (ecommerce, hr, healthcare, legal) were added in v0.2 because policy-bound systems show the highest real-world CAI failure rates.
+Policy domains show the highest real-world CAI failure rates. Financial services and insurance were added in v0.3 — rephrase-sensitive policy language, no other benchmark covers them.
 
 ---
 

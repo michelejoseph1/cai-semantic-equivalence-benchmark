@@ -10,7 +10,7 @@ A **CAI failure** is when a model gives contradictory answers to two prompts tha
 
 ## Dataset
 
-**380 semantically equivalent prompt pairs** across 14 domains.
+**420 semantically equivalent prompt pairs** across 19 domains.
 
 | Domain | Pairs | Notes |
 |---|---|---|
@@ -27,9 +27,14 @@ A **CAI failure** is when a model gives contradictory answers to two prompts tha
 | `creative_writing` | 20 | Imaginative prompts |
 | `summarization` | 40 | Paraphrase and summarization |
 | `cai_meta` | 30 | CAI theory and methodology |
-| `policy` | 80 | **Ecommerce, HR, healthcare, legal** |
+| `ecommerce` | 20 | Returns, shipping, pricing policy |
+| `hr` | 20 | PTO, benefits, conduct policy |
+| `healthcare` | 20 | Coverage, referrals, eligibility |
+| `legal` | 20 | Contracts, rights, obligations |
+| `financial_services` | 20 | **Loans, accounts, tax, retirement** |
+| `insurance` | 20 | **Coverage, claims, exclusions, liability** |
 
-The `policy` domain is new in v0.2. These are the pairs where CAI failures matter most — policy-bound LLM systems that contradict themselves when a question is rephrased. Real support bots, HR assistants, healthcare chatbots, legal tools.
+The policy domains are where CAI failures matter most in production. Financial services and insurance were added in v0.3 — policy language in these sectors is notoriously rephrase-sensitive and no other benchmark measures it.
 
 Each row: `pair_id, domain, prompt_A, prompt_B`
 

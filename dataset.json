@@ -2278,5 +2278,245 @@
     "domain": "legal",
     "prompt_A": "What happens if the other party violates a court order?",
     "prompt_B": "Someone ignored a court order that was against them. What are my options?"
+  },
+  {
+    "pair_id": 381,
+    "domain": "financial_services",
+    "prompt_A": "What is the penalty for early withdrawal from a CD?",
+    "prompt_B": "If I take money out of my certificate of deposit before maturity will I be charged a fee?"
+  },
+  {
+    "pair_id": 382,
+    "domain": "financial_services",
+    "prompt_A": "How does compound interest differ from simple interest?",
+    "prompt_B": "Is the interest I earn on my savings calculated the same way as basic interest?"
+  },
+  {
+    "pair_id": 383,
+    "domain": "financial_services",
+    "prompt_A": "What credit score do I need to qualify for a mortgage?",
+    "prompt_B": "How high does my credit rating need to be before a bank will give me a home loan?"
+  },
+  {
+    "pair_id": 384,
+    "domain": "financial_services",
+    "prompt_A": "Can I contribute to both a Roth IRA and a traditional IRA in the same year?",
+    "prompt_B": "Am I allowed to put money into two different types of IRA accounts at once?"
+  },
+  {
+    "pair_id": 385,
+    "domain": "financial_services",
+    "prompt_A": "What happens to my investment account if my brokerage goes bankrupt?",
+    "prompt_B": "If the company holding my investments fails will I lose my money?"
+  },
+  {
+    "pair_id": 386,
+    "domain": "financial_services",
+    "prompt_A": "How is capital gains tax calculated on stock sales?",
+    "prompt_B": "When I sell shares for a profit how does the government figure out what I owe in taxes?"
+  },
+  {
+    "pair_id": 387,
+    "domain": "financial_services",
+    "prompt_A": "What is the difference between a secured and unsecured loan?",
+    "prompt_B": "Does collateral change the terms of a personal loan?"
+  },
+  {
+    "pair_id": 388,
+    "domain": "financial_services",
+    "prompt_A": "Can my bank freeze my account without notifying me?",
+    "prompt_B": "Is it legal for a bank to lock my account without warning?"
+  },
+  {
+    "pair_id": 389,
+    "domain": "financial_services",
+    "prompt_A": "What fees are typically charged for wire transfers?",
+    "prompt_B": "How much does it usually cost to send money electronically to another bank?"
+  },
+  {
+    "pair_id": 390,
+    "domain": "financial_services",
+    "prompt_A": "How long does a bankruptcy stay on my credit report?",
+    "prompt_B": "After I file for bankruptcy how many years will it affect my credit history?"
+  },
+  {
+    "pair_id": 391,
+    "domain": "financial_services",
+    "prompt_A": "What is the maximum FDIC insurance coverage per account?",
+    "prompt_B": "How much of my bank deposit is protected if the bank fails?"
+  },
+  {
+    "pair_id": 392,
+    "domain": "financial_services",
+    "prompt_A": "Can I deduct mortgage interest on my taxes?",
+    "prompt_B": "Is the interest I pay on my home loan tax deductible?"
+  },
+  {
+    "pair_id": 393,
+    "domain": "financial_services",
+    "prompt_A": "What is the difference between a money market account and a savings account?",
+    "prompt_B": "Are money market accounts and regular savings accounts basically the same thing?"
+  },
+  {
+    "pair_id": 394,
+    "domain": "financial_services",
+    "prompt_A": "How does a balance transfer affect my credit score?",
+    "prompt_B": "If I move my credit card debt to another card will it hurt my credit?"
+  },
+  {
+    "pair_id": 395,
+    "domain": "financial_services",
+    "prompt_A": "What are my rights if a debt collector contacts me?",
+    "prompt_B": "Can a debt collection agency contact me whenever they want?"
+  },
+  {
+    "pair_id": 396,
+    "domain": "financial_services",
+    "prompt_A": "How long does a bank have to process a disputed charge?",
+    "prompt_B": "If I report a fraudulent transaction how quickly must my bank respond?"
+  },
+  {
+    "pair_id": 397,
+    "domain": "financial_services",
+    "prompt_A": "What is the difference between a fiduciary and a financial advisor?",
+    "prompt_B": "Is every financial advisor legally required to act in my best interest?"
+  },
+  {
+    "pair_id": 398,
+    "domain": "financial_services",
+    "prompt_A": "Can I withdraw from my 401k without penalty before retirement?",
+    "prompt_B": "Are there ways to access my 401k funds early without paying the 10 percent penalty?"
+  },
+  {
+    "pair_id": 399,
+    "domain": "financial_services",
+    "prompt_A": "What happens if I miss a minimum credit card payment?",
+    "prompt_B": "If I only skip one credit card payment what are the consequences?"
+  },
+  {
+    "pair_id": 400,
+    "domain": "financial_services",
+    "prompt_A": "How do margin calls work in a brokerage account?",
+    "prompt_B": "If my investments drop far enough can my broker force me to sell?"
+  },
+  {
+    "pair_id": 401,
+    "domain": "insurance",
+    "prompt_A": "Does homeowners insurance cover flood damage?",
+    "prompt_B": "Will my home insurance policy pay out if my house floods?"
+  },
+  {
+    "pair_id": 402,
+    "domain": "insurance",
+    "prompt_A": "What is the difference between term and whole life insurance?",
+    "prompt_B": "Is a term life policy the same type of coverage as permanent life insurance?"
+  },
+  {
+    "pair_id": 403,
+    "domain": "insurance",
+    "prompt_A": "Can my insurer cancel my policy mid-term without cause?",
+    "prompt_B": "Is it legal for my insurance company to drop me before my policy expires?"
+  },
+  {
+    "pair_id": 404,
+    "domain": "insurance",
+    "prompt_A": "What does liability coverage in an auto policy actually protect?",
+    "prompt_B": "If I cause a car accident what does the liability part of my insurance pay for?"
+  },
+  {
+    "pair_id": 405,
+    "domain": "insurance",
+    "prompt_A": "Does health insurance cover pre-existing conditions?",
+    "prompt_B": "Can my insurer refuse to pay for treatment of a condition I had before I enrolled?"
+  },
+  {
+    "pair_id": 406,
+    "domain": "insurance",
+    "prompt_A": "What is a subrogation clause in an insurance policy?",
+    "prompt_B": "If my insurer pays my claim can they then go after the person who caused my loss?"
+  },
+  {
+    "pair_id": 407,
+    "domain": "insurance",
+    "prompt_A": "How does an insurance deductible work?",
+    "prompt_B": "What portion of a claim do I have to pay myself before my insurance kicks in?"
+  },
+  {
+    "pair_id": 408,
+    "domain": "insurance",
+    "prompt_A": "Can I be denied life insurance because of my health history?",
+    "prompt_B": "Will a serious illness in my past prevent me from getting a life insurance policy?"
+  },
+  {
+    "pair_id": 409,
+    "domain": "insurance",
+    "prompt_A": "What is the difference between actual cash value and replacement cost coverage?",
+    "prompt_B": "Will my insurer pay what my property is worth now or what it would cost to replace it?"
+  },
+  {
+    "pair_id": 410,
+    "domain": "insurance",
+    "prompt_A": "Does renters insurance cover my belongings if they are stolen outside my apartment?",
+    "prompt_B": "If someone steals my laptop from my car will my renters policy cover it?"
+  },
+  {
+    "pair_id": 411,
+    "domain": "insurance",
+    "prompt_A": "What happens if I file too many insurance claims?",
+    "prompt_B": "Can my insurer raise my rates or drop me if I make several claims in a short period?"
+  },
+  {
+    "pair_id": 412,
+    "domain": "insurance",
+    "prompt_A": "Is there a waiting period before my health insurance coverage starts?",
+    "prompt_B": "Do I have to wait after enrolling before I can use my health plan?"
+  },
+  {
+    "pair_id": 413,
+    "domain": "insurance",
+    "prompt_A": "What does errors and omissions insurance cover for professionals?",
+    "prompt_B": "If I make a professional mistake that costs a client money does E and O insurance cover that?"
+  },
+  {
+    "pair_id": 414,
+    "domain": "insurance",
+    "prompt_A": "Can my auto insurer deny a claim if I was driving for a rideshare?",
+    "prompt_B": "If I get into an accident while driving for a rideshare app will my personal auto insurance pay?"
+  },
+  {
+    "pair_id": 415,
+    "domain": "insurance",
+    "prompt_A": "What is umbrella insurance and who needs it?",
+    "prompt_B": "Is umbrella coverage just extra liability protection on top of my existing policies?"
+  },
+  {
+    "pair_id": 416,
+    "domain": "insurance",
+    "prompt_A": "How does a claims-made policy differ from an occurrence policy?",
+    "prompt_B": "Does it matter when a claim is filed versus when the incident happened for coverage to apply?"
+  },
+  {
+    "pair_id": 417,
+    "domain": "insurance",
+    "prompt_A": "What must an insurer prove to deny a claim based on fraud?",
+    "prompt_B": "Can my insurer reject my claim just by saying they suspect fraud?"
+  },
+  {
+    "pair_id": 418,
+    "domain": "insurance",
+    "prompt_A": "Does business interruption insurance cover a pandemic?",
+    "prompt_B": "If a government shutdown forces my business to close will my policy pay lost revenue?"
+  },
+  {
+    "pair_id": 419,
+    "domain": "insurance",
+    "prompt_A": "What is coinsurance in a commercial property policy?",
+    "prompt_B": "If I underinsure my building will the insurer reduce what they pay on a partial loss?"
+  },
+  {
+    "pair_id": 420,
+    "domain": "insurance",
+    "prompt_A": "Can I add a driver to my auto policy without telling my insurer about their record?",
+    "prompt_B": "Do I have to disclose a household member's driving history when adding them to my car insurance?"
   }
 ]
