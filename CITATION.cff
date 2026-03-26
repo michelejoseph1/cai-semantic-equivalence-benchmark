@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+type: software
+title: "CAI Semantic Equivalence Benchmark"
+version: "0.2"
+date-released: "2026-03-25"
+url: "https://github.com/michelejoseph1/cai-semantic-equivalence-benchmark"
+repository-code: "https://github.com/michelejoseph1/cai-semantic-equivalence-benchmark"
+license: MIT
+abstract: >
+  A benchmark for measuring semantic invariance in language models.
+  Tests whether a model gives the same answer when a question is rephrased.
+  380 prompt pairs across 17 domains including factual, math/logic, ethics,
+  AI safety, and policy (ecommerce, HR, healthcare, legal).
+  Scored with CAI Strain v2, a model-based judge on a 0–1 inconsistency scale.
+keywords:
+  - LLM evaluation
+  - semantic consistency
+  - CAI
+  - benchmark
+  - NLP
+  - AI safety
+  - policy QA
+authors:
+  - family-names: "Joseph"
+    given-names: "Michele"
+    email: "michele.a.joseph@gmail.com"
+preferred-citation:
+  type: software
+  title: "CAI Semantic Equivalence Benchmark"
+  authors:
+    - family-names: "Joseph"
+      given-names: "Michele"
+  year: 2025
+  url: "https://github.com/michelejoseph1/cai-semantic-equivalence-benchmark"
+  version: "0.2"
+  notes: "v0.2"

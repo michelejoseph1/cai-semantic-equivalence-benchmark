@@ -1,0 +1,11 @@
+[
+  {
+    "model": "gpt-4o",
+    "provider": "openai",
+    "pairs": 300,
+    "avg_cai_strain": 0.3642,
+    "date": "2025-01-01",
+    "scorer": "evaluate_openai.py",
+    "notes": "v0.1 dataset (300 pairs, no policy domain). Surface mismatch 0.99, semantic drift 0.36."
+  }
+]
